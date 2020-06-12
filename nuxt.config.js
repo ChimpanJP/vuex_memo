@@ -23,11 +23,14 @@ export default {
   ** Global CSS
   */
   css: [
+    'bootstrap/dist/css/bootstrap.css',
+    'bootstrap-vue/dist/bootstrap-vue.css',
   ],
   /*
   ** Plugins to load before mounting the App
   */
   plugins: [
+    { src: "~plugins/persistedstate.js", ssr: false }
   ],
   /*
   ** Nuxt.js dev-modules
@@ -38,6 +41,7 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
+    'bootstrap-vue/nuxt',
   ],
   /*
   ** Build configuration
